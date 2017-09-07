@@ -1,0 +1,64 @@
+title: Install CA certificate to iOS Simulator
+summary: Install CA certificate to iOS Simulator
+description: Install CA certificate to iOS Simulator
+
+website: https://github.com/bitrise-steplib/bitrise-step-install-ca-certificate-to-ios-simulator
+source_code_url: https://github.com/bitrise-steplib/bitrise-step-install-ca-certificate-to-ios-simulator
+support_url: https://github.com/bitrise-steplib/bitrise-step-install-ca-certificate-to-ios-simulator/issues
+
+host_os_tags:
+  - osx-10.10
+  - ubuntu-16.04
+project_type_tags:
+  - ios
+  - xamarin
+  - react-native
+  - cordova
+  - ionic
+type_tags:
+  - utility
+
+is_requires_admin_user: false
+is_always_run: false
+is_skippable: false
+run_if: ""
+
+toolkit:
+  go:
+    package_name: github.com/bitrise-steplib/bitrise-step-install-ca-certificate-to-ios-simulator
+
+inputs:
+  - certificate_path: 
+    opts:
+      title: "CA certificate path"
+      description: |-
+        Path of the CA certificate you want to install.
+      is_required: true
+  - simulator_device: iPhone 6s Plus
+    opts:
+      title: "Device"
+      description: |-
+        Set it as it is shown in Xcode's device selection dropdown UI.
+        A couple of examples (the
+        actual available options depend on which versions
+        are installed):
+
+        * iPhone 6
+        * iPhone 6 Plus
+        * iPad
+        * iPad Air
+        * Apple TV 1080p (don't forget to set the platform to `tvOS Simulator` to use this option!)
+      is_required: true
+  - simulator_os_version: latest
+    opts:
+      title: "OS version"
+      description: |-
+        Set it as it is shown in
+        Xcode's device selection dropdown UI.
+        A couple of format examples (the
+        actual available options depend on which versions
+        are installed):
+
+        * 8.4
+        * latest
+      is_required: true

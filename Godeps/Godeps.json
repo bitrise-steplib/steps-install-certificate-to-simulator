@@ -1,0 +1,97 @@
+{
+	"ImportPath": "github.com/bitrise-steplib/bitrise-step-install-ca-certificate-to-ios-simulator",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/GeertJohan/go.rice",
+			"Rev": "c02ca9a983da5807ddf7d796784928f5be4afd09"
+		},
+		{
+			"ImportPath": "github.com/GeertJohan/go.rice/embedded",
+			"Rev": "c02ca9a983da5807ddf7d796784928f5be4afd09"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/colorstring",
+			"Rev": "6eb582e08179a025ed2deb86ea6dffbd13ba1ff6"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/command",
+			"Rev": "6eb582e08179a025ed2deb86ea6dffbd13ba1ff6"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/errorutil",
+			"Rev": "6eb582e08179a025ed2deb86ea6dffbd13ba1ff6"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/fileutil",
+			"Rev": "6eb582e08179a025ed2deb86ea6dffbd13ba1ff6"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/log",
+			"Rev": "6eb582e08179a025ed2deb86ea6dffbd13ba1ff6"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/pathutil",
+			"Rev": "6eb582e08179a025ed2deb86ea6dffbd13ba1ff6"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/progress",
+			"Rev": "6eb582e08179a025ed2deb86ea6dffbd13ba1ff6"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/steps-xcode-test/command",
+			"Comment": "1.18.7",
+			"Rev": "e821734864cb7b515240f392fc7195f490855a1a"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/steps-xcode-test/models",
+			"Comment": "1.18.7",
+			"Rev": "e821734864cb7b515240f392fc7195f490855a1a"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/steps-xcode-test/xcodeutil",
+			"Comment": "1.18.7",
+			"Rev": "e821734864cb7b515240f392fc7195f490855a1a"
+		},
+		{
+			"ImportPath": "github.com/bitrise-tools/go-steputils/input",
+			"Rev": "a848c9870ff7d745a8fb2a951e1c81fcb147b4ec"
+		},
+		{
+			"ImportPath": "github.com/bitrise-tools/go-xcode/plistutil",
+			"Rev": "dd8cdbc9ec4776525971efdaf38cfff447e6d2c4"
+		},
+		{
+			"ImportPath": "github.com/daaku/go.zipexe",
+			"Rev": "a5fe2436ffcb3236e175e5149162b41cd28bd27d"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/go-version",
+			"Rev": "03c5bf6be031b6dd45afec16b1cf94fc8938bc77"
+		},
+		{
+			"ImportPath": "github.com/kardianos/osext",
+			"Rev": "ae77be60afb1dcacde03767a8c37337fad28ac14"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/ssh/terminal",
+			"Rev": "81e90905daefcd6fd217b62423c0908922eadb30"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "9aade4d3a3b7e6d876cd3823ad20ec45fc035402"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/windows",
+			"Rev": "9aade4d3a3b7e6d876cd3823ad20ec45fc035402"
+		},
+		{
+			"ImportPath": "howett.net/plist",
+			"Rev": "2f847ea62b17703c861484a09f0e5841328a2cb9"
+		}
+	]
+}
