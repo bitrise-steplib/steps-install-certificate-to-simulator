@@ -1,19 +1,11 @@
 {
-	"ImportPath": "github.com/bitrise-steplib/bitrise-step-install-ca-certificate-to-ios-simulator",
+	"ImportPath": "github.com/bitrise-steplib/steps-install-certificate-to-simulator",
 	"GoVersion": "go1.8",
 	"GodepVersion": "v79",
 	"Packages": [
 		"./..."
 	],
 	"Deps": [
-		{
-			"ImportPath": "github.com/GeertJohan/go.rice",
-			"Rev": "c02ca9a983da5807ddf7d796784928f5be4afd09"
-		},
-		{
-			"ImportPath": "github.com/GeertJohan/go.rice/embedded",
-			"Rev": "c02ca9a983da5807ddf7d796784928f5be4afd09"
-		},
 		{
 			"ImportPath": "github.com/bitrise-io/go-utils/colorstring",
 			"Rev": "6eb582e08179a025ed2deb86ea6dffbd13ba1ff6"
@@ -66,16 +58,8 @@
 			"Rev": "dd8cdbc9ec4776525971efdaf38cfff447e6d2c4"
 		},
 		{
-			"ImportPath": "github.com/daaku/go.zipexe",
-			"Rev": "a5fe2436ffcb3236e175e5149162b41cd28bd27d"
-		},
-		{
 			"ImportPath": "github.com/hashicorp/go-version",
 			"Rev": "03c5bf6be031b6dd45afec16b1cf94fc8938bc77"
-		},
-		{
-			"ImportPath": "github.com/kardianos/osext",
-			"Rev": "ae77be60afb1dcacde03767a8c37337fad28ac14"
 		},
 		{
 			"ImportPath": "golang.org/x/crypto/ssh/terminal",

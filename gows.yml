@@ -1,1 +1,1 @@
-package_name: github.com/bitrise-steplib/bitrise-step-install-ca-certificate-to-ios-simulator
+package_name: github.com/bitrise-steplib/steps-install-certificate-to-simulator
