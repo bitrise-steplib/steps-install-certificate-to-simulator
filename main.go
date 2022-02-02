@@ -12,6 +12,8 @@ import (
 	"github.com/bitrise-io/go-utils/log"
 	"github.com/bitrise-io/go-utils/pathutil"
 	"github.com/bitrise-io/go-utils/progress"
+	"github.com/bitrise-io/go-xcode/utility"
+	"github.com/bitrise-io/steps-xcode-test/models"
 	"github.com/bitrise-io/steps-xcode-test/xcodeutil"
 	"github.com/bitrise-tools/go-steputils/input"
 )
@@ -91,7 +93,13 @@ func main() {
 	log.Printf("- udid: %s", simulator.SimID)
 	log.Printf("- status: %s", simulator.Status)
 
-	xcodebuildVersion, err := xcodeutil.GetXcodeVersion()
+	xcodebuildVersionModule, err := utility.GetXcodeVersion()
+	xcodebuildVersion := models.XcodebuildVersionModel{
+		Version:      xcodebuildVersionModule.Version,
+		BuildVersion: xcodebuildVersionModule.BuildVersion,
+		MajorVersion: xcodebuildVersionModule.MajorVersion,
+	}
+
 	if err != nil {
 		log.Errorf("Failed to get the version of xcodebuild, error: %s", err)
 		os.Exit(1)
